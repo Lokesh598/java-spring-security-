@@ -19,7 +19,7 @@ public class HomeController {
         String accessToken = user.getIdToken().getTokenValue();
         ModelAndView modelAndView = new ModelAndView("redirect:http://localhost:4200/Home");
         modelAndView.addObject("fullName", fullName);
-        modelAndView.addObject("accessToken", accessToken);
+//        modelAndView.addObject("accessToken", accessToken);
         return modelAndView;
     }
 
